@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>03a73d05-8990-43e7-8f02-50b029f8b480</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CohesionIB.ApiEnginner.CodeChallenge.Repository\CohesionIB.ApiEnginner.CodeChallenge.Repository.csproj" />
+    <ProjectReference Include="..\Lot.O.Invitation.Codes.Services\Lot.O.Invitation.Codes.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Document\" />
+  </ItemGroup>
+
+
+</Project>
